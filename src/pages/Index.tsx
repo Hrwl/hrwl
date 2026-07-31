@@ -272,13 +272,26 @@ export default function Index() {
 
                 {/* Video container */}
                 <div
-                  className="relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[24px] w-full shadow-2xl bg-cover bg-center"
+                  className="relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[24px] w-full shadow-2xl"
                   style={{
                     backgroundColor: "#0F0F0F",
                     aspectRatio: "16/9",
-                    backgroundImage: !isPlaying ? `url(${heroThumb})` : "none"
                   }}
                 >
+                  {/* Hero thumbnail — real <img> for LCP discoverability + fetchpriority */}
+                  {!isPlaying && (
+                    <img
+                      src={heroThumb}
+                      alt=""
+                      aria-hidden="true"
+                      fetchPriority="high"
+                      decoding="sync"
+                      width={1920}
+                      height={1080}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  )}
+
                   {/* Vimeo iframe — injected on first play to prevent background CPU/network load */}
                   {iframeReady && (
                     <iframe

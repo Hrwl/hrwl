@@ -132,7 +132,7 @@ export default function TheOneYouKeep() {
             fontFamily: "Inter, sans-serif",
             fontWeight: 500,
             fontSize: "13px",
-            color: "hsl(var(--foreground) / 0.45)",
+            color: "hsl(var(--foreground) / 0.75)",
           }}
         >
           <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-1" />
@@ -140,7 +140,7 @@ export default function TheOneYouKeep() {
         </Link>
 
         <div className="inline-flex items-center rounded-full px-3 py-1 mb-6 border border-foreground/[0.12]">
-          <span className="font-inter font-bold text-[11px] tracking-[0.1em] uppercase text-foreground/40">
+          <span className="font-inter font-bold text-[11px] tracking-[0.1em] uppercase text-foreground/75">
             Case Study
           </span>
         </div>

@@ -96,9 +96,10 @@ export default function Navbar() {
                     onClick={handleNavClick(to)}
                     style={{
                       ...NAV_STYLE,
-                      opacity: pathname === to ? 1 : 0.6,
+                      opacity: pathname === to ? 1 : 0.8,
                       color: "hsl(var(--foreground))",
                     }}
+
 
                     className={`transition-all duration-300 relative group hover:opacity-100 ${pathname === to ? "brightness-125" : ""
                       }`}

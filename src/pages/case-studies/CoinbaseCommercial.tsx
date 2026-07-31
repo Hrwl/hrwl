@@ -87,7 +87,7 @@ function PhaseStep({ n, title, desc, ledBy, i, isLast }: { n: string; title: str
               fontWeight: 400,
               fontSize: "15.17px",
               lineHeight: "23px",
-              color: "hsl(var(--foreground) / 0.45)",
+              color: "hsl(var(--foreground) / 0.75)",
               display: "flex",
               alignItems: "center",
               maxWidth: "450px",
@@ -167,7 +167,7 @@ export default function CoinbaseCommercial() {
             fontFamily: "Inter, sans-serif",
             fontWeight: 500,
             fontSize: "13px",
-            color: "hsl(var(--foreground) / 0.45)",
+            color: "hsl(var(--foreground) / 0.75)",
           }}
         >
           <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-1" />
@@ -304,7 +304,7 @@ export default function CoinbaseCommercial() {
                         fontWeight: 400,
                         fontSize: "15.17px",
                         lineHeight: "23px",
-                        color: "hsl(var(--foreground) / 0.45)",
+                        color: "hsl(var(--foreground) / 0.75)",
                         display: "flex",
                         alignItems: "center",
                         marginTop: "3px"

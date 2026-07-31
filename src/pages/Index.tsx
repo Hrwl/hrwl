@@ -179,15 +179,23 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
-      <SEO />
+      <SEO url="https://hrwl.studio" />
       <main className="overflow-x-hidden">
         {/* ═══ Page overlay — appears when video is playing, above navbar ═══ */}
         {isPlaying && (
           <div
             className="fixed inset-0 z-[60] bg-black/75 backdrop-blur-sm"
+            role="button"
+            tabIndex={0}
             onClick={() => {
               setIsPlaying(false);
               postMessage("pause");
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                setIsPlaying(false);
+                postMessage("pause");
+              }
             }}
             onTouchEnd={(e) => {
               e.preventDefault();
@@ -197,6 +205,7 @@ export default function Index() {
             aria-label="Click to pause video"
           />
         )}
+
 
 
         {/* ═══ First Viewport: Hero Section ═══ */}
@@ -285,8 +294,9 @@ export default function Index() {
                   {/* Video Interaction Overlay — only shows play button; clicking void (bg overlay) pauses */}
                   <div
                     className="absolute inset-0 z-20 cursor-pointer pointer-events-none"
-                    aria-label={isPlaying ? "Playing" : "Play video"}
+                    role="presentation"
                   >
+
                     <AnimatePresence>
                       {!isPlaying && (
                         <motion.div
@@ -466,7 +476,7 @@ export default function Index() {
                       </h3>
                       <p className="text-xs text-muted-foreground">{project.format || "Brand System"}</p>
                     </div>
-                    <span className="text-[11px] font-mono text-muted-foreground/60">{project.year}</span>
+                    <span className="text-[11px] font-mono text-muted-foreground/75">{project.year}</span>
                   </div>
                 </Link>
               ))}
@@ -500,7 +510,7 @@ export default function Index() {
                   key={i}
                   className="p-6 bg-card rounded-xl border border-border/60 card-elevated"
                 >
-                  <span className="text-[11px] font-mono text-muted-foreground/50">{item.num}</span>
+                  <span className="text-[11px] font-mono text-muted-foreground/70">{item.num}</span>
                   <h3 className="text-base font-semibold mt-3 mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                 </div>

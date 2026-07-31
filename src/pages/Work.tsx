@@ -72,9 +72,10 @@ const Work = () => {
                           <h3 className="font-semibold text-sm leading-snug group-hover:text-muted-foreground transition-colors duration-400 text-foreground">
                             {project.title}
                           </h3>
-                          <span className="text-[11px] font-mono text-muted-foreground/50 flex-shrink-0 mt-0.5">
+                          <span className="text-[11px] font-mono text-muted-foreground/75 flex-shrink-0 mt-0.5">
                             {project.year}
                           </span>
+
                         </div>
                         <p className="text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
                           {project.overview}

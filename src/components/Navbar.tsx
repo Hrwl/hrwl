@@ -96,9 +96,10 @@ export default function Navbar() {
                     onClick={handleNavClick(to)}
                     style={{
                       ...NAV_STYLE,
-                      opacity: pathname === to ? 1 : 0.4,
+                      opacity: pathname === to ? 1 : 0.6,
                       color: "hsl(var(--foreground))",
                     }}
+
                     className={`transition-all duration-300 relative group hover:opacity-100 ${pathname === to ? "brightness-125" : ""
                       }`}
                   >
@@ -147,8 +148,11 @@ export default function Navbar() {
             <img
               src={hrwlLogoBlack}
               alt="HRWL"
+              width="96"
+              height="28"
               className="h-6 md:h-7 w-auto dark:invert transition-all duration-300 hover:scale-105"
             />
+
           </Link>
 
           {/* ── Right: Shop + toggle + Inquiries (desktop) ── */}

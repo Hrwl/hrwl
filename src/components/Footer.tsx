@@ -42,7 +42,8 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 mb-12 lg:mb-16">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <img src={logoSrc} alt="HRWL" className="h-6 w-auto mb-8" />
+            <img src={logoSrc} alt="HRWL" width="96" height="24" className="h-6 w-auto mb-8" />
+
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 max-w-md leading-tight">
               {catchphrase}
             </h3>
@@ -71,7 +72,7 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
           {/* Navigation */}
           <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
             <div>
-              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/40">Explore</h4>
+              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/65">Explore</h4>
               <nav className="flex flex-col gap-3">
                 {[
                   { name: "Home", path: "/" },
@@ -92,7 +93,7 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
 
             {/* Services — hidden on mobile */}
             <div className="hidden md:block">
-              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/40">Services</h4>
+              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/65">Services</h4>
               <nav className="flex flex-col gap-3">
                 {["Brand Films", "Commercials", "Motion Design", "Creative Direction"].map((item) => (
                   <span key={item} className="text-background/60 text-sm">{item}</span>
@@ -101,7 +102,7 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
             </div>
 
             <div>
-              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/40">Connect</h4>
+              <h4 className="font-semibold mb-5 text-sm uppercase tracking-wider text-background/65">Connect</h4>
               <nav className="flex flex-col gap-3">
                 <Link to="/inquiry" className="text-background/60 hover:text-background transition-colors text-sm flex items-center gap-1 group">
                   Start Inquiry
@@ -121,25 +122,25 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
         {/* Bottom */}
         <div className="pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-background/40 text-sm">
+            <div className="text-background/60 text-sm">
               © {currentYear} HRWL LTD. All rights reserved.
             </div>
-            <div className="text-background/30 text-xs">
+            <div className="text-background/55 text-xs">
               Built by{" "}
               <a
                 href="https://salaheddinemedkour.me/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-background/50 hover:text-background/80 transition-colors underline-offset-2 hover:underline"
+                className="text-background/70 hover:text-background/90 transition-colors underline-offset-2 hover:underline"
               >
                 Salahuddin
               </a>
             </div>
             <div className="flex gap-8 text-sm">
-              <Link to="/terms" className="text-background/40 hover:text-background/60 transition-colors">
+              <Link to="/terms" className="text-background/60 hover:text-background/80 transition-colors">
                 Terms
               </Link>
-              <Link to="/privacy" className="text-background/40 hover:text-background/60 transition-colors">
+              <Link to="/privacy" className="text-background/60 hover:text-background/80 transition-colors">
                 Privacy
               </Link>
             </div>

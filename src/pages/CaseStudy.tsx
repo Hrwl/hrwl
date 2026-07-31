@@ -9,7 +9,7 @@ import HRWLVisualIdentityCaseStudy from "@/components/case-studies/HRWLVisualIde
 import HRWLBrandFilmCaseStudy from "@/components/case-studies/HRWLBrandFilmCaseStudy";
 import BackToWork from "@/components/BackToWork";
 import MediaLightbox from "@/components/MediaLightbox";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/components/SEO";
 import { useAudio } from "@/context/AudioContext";
 import hrwlSfx from "@/assets/Case studies/Hrwl - Launch Campaign/SFX/djamel_sfx_final.mp3";
 
@@ -124,26 +124,12 @@ const CaseStudy = () => {
   // Wrapper function to add BackToWork + per-case OG meta to any case
   const withNavigation = (content: React.ReactNode) => (
     <div className="min-h-screen bg-background flex flex-col">
-      <Helmet>
-        <title>{ogTitle}</title>
-        <meta name="description" content={ogDesc} />
-        <link rel="canonical" href={ogUrl} />
-        <meta property="og:site_name" content="HRWL" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={ogUrl} />
-        <meta property="og:title" content={ogTitle} />
-        <meta property="og:description" content={ogDesc} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" />
-        <meta property="og:image:alt" content={ogTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={ogTitle} />
-        <meta name="twitter:description" content={ogDesc} />
-        <meta name="twitter:image" content={ogImage} />
-        <meta name="twitter:image:alt" content={ogTitle} />
-      </Helmet>
+      <SEO 
+        title={ogTitle}
+        description={ogDesc}
+        url={ogUrl}
+        image={ogImage}
+      />
       <div className="flex-1">
         <BackToWork />
         {content}

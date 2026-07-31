@@ -47,7 +47,7 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 max-w-md leading-tight">
               {catchphrase}
             </h3>
-            <p className="text-background/50 leading-relaxed max-w-md mb-8">
+            <p className="text-background/80 leading-relaxed max-w-md mb-8">
               Freelance Motion Designer specializing in brand films and commercials for ambitious brands.
             </p>
             <div className="flex gap-4">
@@ -125,7 +125,7 @@ const Footer = ({ catchphrase = "Let's create something worth watching." }: Foot
             <div className="text-background/60 text-sm">
               © {currentYear} HRWL LTD. All rights reserved.
             </div>
-            <div className="text-background/55 text-xs">
+            <div className="text-background/75 text-xs">
               Built by{" "}
               <a
                 href="https://salaheddinemedkour.me/"

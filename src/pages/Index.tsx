@@ -476,7 +476,7 @@ export default function Index() {
                       </h3>
                       <p className="text-xs text-muted-foreground">{project.format || "Brand System"}</p>
                     </div>
-                    <span className="text-[11px] font-mono text-muted-foreground/75">{project.year}</span>
+                    <span className="text-[11px] font-mono text-muted-foreground">{project.year}</span>
                   </div>
                 </Link>
               ))}
@@ -510,7 +510,7 @@ export default function Index() {
                   key={i}
                   className="p-6 bg-card rounded-xl border border-border/60 card-elevated"
                 >
-                  <span className="text-[11px] font-mono text-muted-foreground/70">{item.num}</span>
+                  <span className="text-[11px] font-mono text-muted-foreground">{item.num}</span>
                   <h3 className="text-base font-semibold mt-3 mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                 </div>

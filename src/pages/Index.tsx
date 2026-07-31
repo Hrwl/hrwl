@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import heroThumb from "@/assets/hero-thumb.webp";
+const heroThumb = "/assets/hero-thumb.webp";
 import WorkCard from "@/components/WorkCard";
 import { CASES } from "@/data/cases";
 import { ArrowUpRight, Play } from "lucide-react";

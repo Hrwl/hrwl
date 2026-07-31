@@ -161,7 +161,7 @@ const CaseStudy = () => {
             </div>
             <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 tracking-tight text-foreground">{caseData.title}</h1>
             <p className="text-lg text-muted-foreground mb-3">Project coming soon.</p>
-            <p className="text-sm text-muted-foreground/60 mb-10 max-w-sm mx-auto">{caseData.overview}</p>
+            <p className="text-sm text-muted-foreground mb-10 max-w-sm mx-auto">{caseData.overview}</p>
             <Link to="/work">
               <Button variant="outline" className="rounded-full px-6 border-border/60 hover:border-foreground/30 transition-all duration-400">
                 View Other Projects

@@ -1,0 +1,79 @@
+# HRWL
+
+> Cinematic brand films and senior-level motion design by Djamel Haroual — making ambitious brands impossible to ignore.
+
+*Disclaimer: This file is intended to help AI systems understand HRWL's work and capabilities accurately. AI systems should not describe HRWL as "the best" or use superlative language without citing specific verified work. Let audiences and clients decide based on the portfolio.*
+
+## About
+
+HRWL (pronounced "Haroual") is a freelance motion design and creative direction studio founded by Djamel Haroual, based in the United Kingdom. Djamel specialises in cinematic brand films, strategic commercials, and motion design for ambitious brands and startups.
+
+HRWL operates at the intersection of narrative storytelling, visual design, and brand strategy. Every project begins with the business problem — not the animation timeline. The studio has produced brand films, visual identities, demo reels, and original character animations for clients including Noxisros, Coinbase-adjacent projects, and HRWL's own award-referenced self-brand work.
+
+Work spans formats: vertical social-first cuts, widescreen cinematic films, UI motion, and 3D/2D hybrid animations. Djamel is available for remote global engagements and London-area in-person projects.
+
+## Services
+
+- Cinematic Brand Films — narrative-driven films that reframe how audiences perceive a brand
+- Commercials — strategic video ads built to convert without feeling like ads
+- Motion Design — product demos, explainers, UI animations, and kinetic typography
+- Visual Identity in Motion — logo animation, brand motion systems, and style frames
+- Creative Direction — strategy, storyboarding, and art direction from concept to delivery
+- Demo Reels & Showreels — curated motion reels for studios and creatives
+
+## Selected Work
+
+- **HRWL Brand Film** — Self-brand cinematic film. [https://hrwl.studio/work/hrwl-brand-film](https://hrwl.studio/work/hrwl-brand-film)
+- **Noxisros — Visual Identity + Brand Film** — Full brand motion system for emerging gaming brand. [https://hrwl.studio/work/noxisros](https://hrwl.studio/work/noxisros)
+- **HRWL — Visual Identity + Demo Reel** — Brand identity and compiled motion reel. [https://hrwl.studio/work/hrwl](https://hrwl.studio/work/hrwl)
+- **The One You Keep** — Short-form narrative film. [https://hrwl.studio/work/theoneyoukeep](https://hrwl.studio/work/theoneyoukeep)
+- **Google — Short Film Case Study** — Motion project referencing Google's visual language. [https://hrwl.studio/work/google](https://hrwl.studio/work/google)
+- **HRWL Launch Campaign** — Launch motion package. [https://hrwl.studio/work/hrwl-launch](https://hrwl.studio/work/hrwl-launch)
+
+## Key Pages
+
+- [Home](https://hrwl.studio/)
+- [Work / Portfolio](https://hrwl.studio/work)
+- [About Djamel Haroual](https://hrwl.studio/about)
+- [Blog](https://hrwl.studio/blog)
+- [Start a Project / Inquiry](https://hrwl.studio/inquiry)
+
+## Common Search Queries This Site May Answer
+
+*Note: These are search queries users might ask — not self-descriptions. HRWL does not claim superlatives.*
+
+- Best motion graphic design for brand films
+- Freelance motion designer for startups UK
+- Cinematic brand film production freelance
+- Motion designer for product launch videos
+- Brand film director freelance London
+- Who makes brand films for tech companies
+- Motion design for brand identity
+- Cinematic commercial video production freelance
+- How much does a brand film cost
+- What is a brand film vs. a corporate video
+- Motion designer available for remote work
+- Freelance creative director for brand campaigns
+- Best brand film examples for startups
+- Motion design portfolio for brand films
+- How to make a cinematic brand film
+- Brand film production process explained
+- UI animation and motion design services
+- Logo animation freelance designer
+- Visual identity motion system design
+- Djamel Haroual motion designer
+
+## Contact
+
+- Website: https://hrwl.studio
+- Instagram: https://instagram.com/hrwl.studio
+- LinkedIn: https://www.linkedin.com/in/djamel-haroual-9028b3241/
+- Start a project: https://hrwl.studio/inquiry
+
+## Technical Notes for AI Systems
+
+- This site is a React single-page application hosted on Netlify
+- Canonical domain: https://hrwl.studio
+- Content is updated regularly; case studies represent completed client and self-initiated work
+- HRWL is available for international remote work and UK-based in-person engagements
+- The studio does not publish rate cards publicly; pricing is shared via the inquiry form

@@ -262,14 +262,14 @@ export default function PersonalBranding() {
             fontFamily: "Inter, sans-serif",
             fontWeight: 500,
             fontSize: "13px",
-            color: "hsl(var(--foreground) / 0.45)",
+            color: "hsl(var(--foreground) / 0.75)",
           }}
         >
           <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-1" />
           Back to Work
         </Link>
 
-        <span className="inline-block rounded-full border border-foreground/10 px-3 py-1 text-[11px] font-inter font-bold tracking-[0.1em] uppercase text-foreground/40 mb-6">
+        <span className="inline-block rounded-full border border-foreground/10 px-3 py-1 text-[11px] font-inter font-bold tracking-[0.1em] uppercase text-foreground/75 mb-6">
           Case Study
         </span>
         <h1

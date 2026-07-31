@@ -454,9 +454,15 @@ export default function Index() {
                       <img
                         src={project.thumbnail}
                         alt={project.title}
+                        width={816}
+                        height={612}
+                        loading={i === 0 ? "eager" : "lazy"}
+                        decoding="async"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     ) : (
+
                       <div className="absolute inset-0 bg-gradient-to-br from-foreground/80 to-foreground flex items-center justify-center">
                         <span className="text-4xl font-bold text-background/8 group-hover:text-background/15 transition-colors duration-500">
                           0{i + 1}

@@ -49,6 +49,11 @@ const Work = () => {
                         <img
                           src={project.thumbnail}
                           alt={project.title}
+                          width={816}
+                          height={612}
+                          loading={index === 0 ? "eager" : "lazy"}
+                          decoding="async"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                       ) : (

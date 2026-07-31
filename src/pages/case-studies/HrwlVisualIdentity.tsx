@@ -68,7 +68,7 @@ function PhaseStep({ n, title, desc, i, isLast }: { n: string; title: string; de
               fontWeight: 400,
               fontSize: "13.27px",
               lineHeight: "19px",
-              color: "hsl(var(--foreground) / 0.45)",
+              color: "hsl(var(--foreground) / 0.75)",
               display: "flex",
               alignItems: "center"
             }}
@@ -104,7 +104,7 @@ function PhaseStep({ n, title, desc, i, isLast }: { n: string; title: string; de
               fontWeight: 400,
               fontSize: "15.17px",
               lineHeight: "23px",
-              color: "hsl(var(--foreground) / 0.45)",
+              color: "hsl(var(--foreground) / 0.75)",
               display: "flex",
               alignItems: "center",
               maxWidth: "323.74px",
@@ -166,7 +166,7 @@ export default function HrwlVisualIdentity() {
             fontFamily: "Inter, sans-serif",
             fontWeight: 500,
             fontSize: "13px",
-            color: "hsl(var(--foreground) / 0.45)",
+            color: "hsl(var(--foreground) / 0.75)",
           }}
         >
           <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-1" />
@@ -305,7 +305,7 @@ export default function HrwlVisualIdentity() {
                           fontWeight: 400,
                           fontSize: "15.17px",
                           lineHeight: "23px",
-                          color: "hsl(var(--foreground) / 0.45)",
+                          color: "hsl(var(--foreground) / 0.75)",
                           display: "flex",
                           alignItems: "center",
                           marginTop: "3px"

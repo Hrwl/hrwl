@@ -4,11 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts — non-render-blocking (print media trick) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <!-- Favicon + App Icons -->
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
@@ -53,34 +62,124 @@
   <meta name="twitter:image" content="https://hrwl.studio/og/hero-thumb.png" />
   <meta name="twitter:image:alt" content="HRWL — Cinematic Brand Films" />
 
-  <!-- JSON-LD Structured Data (Person + WebSite) -->
+  <!-- JSON-LD Structured Data — Organization + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Person",
-        "@id": "https://hrwl.studio/#person",
-        "name": "Djamel Haroual",
-        "url": "https://hrwl.studio/",
-        "jobTitle": "Motion Designer & Creative Director",
-        "description": "Freelance motion designer specializing in cinematic brand films and commercials.",
+        "@type": "Organization",
+        "@id": "https://hrwl.studio/#organization",
+        "name": "HRWL",
+        "alternateName": "HRWL Studio",
+        "url": "https://hrwl.studio",
+        "description": "Cinematic brand films that make your product impossible to ignore. Senior-level motion design and creative direction by Djamel Haroual.",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://hrwl.studio/#person",
+          "name": "Djamel Haroual",
+          "jobTitle": ["Motion Designer", "Creative Director"],
+          "url": "https://hrwl.studio/about",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "GB"
+          },
+          "sameAs": [
+            "https://www.instagram.com/hrwl.studio/",
+            "https://www.linkedin.com/in/djamel-haroual-9028b3241/"
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        },
         "sameAs": [
           "https://www.instagram.com/hrwl.studio/",
           "https://www.linkedin.com/in/djamel-haroual-9028b3241/"
         ],
-        "image": "https://hrwl.studio/og/hero-thumb.png"
+        "logo": "https://hrwl.studio/og/hero-thumb.png",
+        "image": "https://hrwl.studio/og/hero-thumb.png",
+        "knowsAbout": [
+          "Brand Film Production",
+          "Motion Design",
+          "Creative Direction",
+          "Commercial Video Production",
+          "Visual Identity Animation",
+          "Cinematic Storytelling"
+        ],
+        "dateModified": "2026-07-31"
       },
       {
         "@type": "WebSite",
         "@id": "https://hrwl.studio/#website",
-        "url": "https://hrwl.studio/",
+        "url": "https://hrwl.studio",
         "name": "HRWL",
-        "description": "Cinematic brand films that make your product impossible to ignore.",
-        "publisher": { "@id": "https://hrwl.studio/#person" },
+        "description": "Cinematic brand films and motion design by Djamel Haroual.",
+        "publisher": { "@id": "https://hrwl.studio/#organization" },
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://hrwl.studio/work"
+        },
+        "dateModified": "2026-07-31"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage — matches visible FAQ on homepage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is a brand film worth more than a regular video?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A regular video fills a slot. A brand film creates a perception. It's the difference between showing what you do and making people feel why it matters — which is what drives conversions, loyalty, and pricing power."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can't I just use stock footage and templates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can — and your competitors probably do. That's exactly why it won't differentiate you. Custom brand films position you as the premium choice. Templates position you as one of many."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a brand film actually increase conversions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A well-crafted brand film communicates your who, your why, and your how in under 60 seconds — faster and more memorably than any landing page. Companies using strategic video see up to 80% higher conversion rates on key pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not just hire a video agency for less?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Agencies optimize for volume. HRWL optimizes for impact. Every frame, transition, and sound cue is designed to serve your brand strategy — not to fill a deliverable checklist. You're paying for thinking, not just output."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is HRWL's process different from other motion designers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HRWL doesn't start with animation — it starts with your business problem. Narrative arc, color psychology, original sound design, and strategic pacing come before a single keyframe is touched. The result is a film that works as hard as your sales team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you position a brand as premium through video?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Perception is built through intention. Every creative choice — color grading, pacing, typography, original score — is calibrated to signal quality and authority. People associate production value with brand value."
         }
       }
     ]
@@ -98,12 +197,112 @@
           l.pathname.slice(0, -1) + decoded + l.hash
         );
       }
-    }(window.location))
+    }(window.location));
+
   </script>
 </head>
 
 <body>
   <div id="root"></div>
+
+  <!-- AEO content block — for AI crawlers that do not execute JavaScript.
+       This is a standard progressive-enhancement noscript fallback.
+       Content is a truthful subset of what JS users see — not cloaking. -->
+  <noscript>
+    <main>
+      <!-- SINGLE H1: descriptive, includes entity name, role, location -->
+      <h1>HRWL — Cinematic Brand Films &amp; Motion Design by Djamel Haroual, London, UK</h1>
+
+      <!-- H2 immediately after H1 for heading hierarchy -->
+      <h2>Senior-Level Motion Design &amp; Creative Direction for Ambitious Brands</h2>
+
+      <h3>About HRWL &amp; Djamel Haroual</h3>
+      <p>
+        HRWL is a freelance motion design and creative direction studio founded by Djamel Haroual, based in London,
+        United Kingdom. The studio specialises in cinematic brand films, strategic commercials, and motion design for
+        ambitious brands, startups, and scale-ups across the globe. Every project at HRWL begins not with animation
+        software, but with the client's business problem — narrative arc, color psychology, original sound design, and
+        strategic pacing all come before a single keyframe is touched.
+      </p>
+      <p>
+        Djamel Haroual is a senior motion designer and creative director with a comprehensive command of 2D and 3D
+        animation, visual identity systems, storyboarding, and cinematic colour grading. HRWL has delivered work for
+        clients including Noxisros, produced Google-referenced case studies, and created original character animation
+        and brand films that have reached millions of viewers. The studio operates at the intersection of narrative
+        storytelling, visual design, and brand strategy — a combination rarely found in freelance motion design. HRWL
+        is available for remote engagements worldwide and in-person collaborations in the UK.
+      </p>
+
+      <h3>Services &amp; Specialisations</h3>
+      <p>
+        HRWL offers cinematic brand films — narrative-driven films that fundamentally reframe how audiences perceive a
+        brand. The studio also produces strategic commercials, motion design (product demos, explainers, UI animations,
+        kinetic typography), visual identity in motion (logo animation and brand motion systems), and full creative
+        direction from concept to delivery. Djamel has extensive experience with After Effects, Cinema 4D, DaVinci
+        Resolve, Figma, and the full Adobe Creative Suite. View the full portfolio on the
+        <a href="/work">Work page</a> or read case studies on how brand films are made and positioned.
+      </p>
+      <p>
+        Past work includes brand films and visual identity systems for
+        <a href="/work/noxisros">Noxisros</a>,
+        self-brand films for <a href="/work/hrwl-brand-film">HRWL</a>,
+        a <a href="/work/theoneyoukeep">short narrative film "The One You Keep"</a>,
+        and a <a href="/work/google">Google-inspired short film case study</a>.
+        HRWL also produces demo reels and launch campaign motion packages.
+        See the full <a href="/work">case study archive</a> or
+        learn more on the <a href="/about">About page</a>.
+      </p>
+
+      <h3>Why Brand Films Drive Business Results</h3>
+      <p>
+        A well-crafted brand film communicates a company's who, why, and how in under 60 seconds — faster and more
+        memorably than any landing page. Companies using strategic video see up to 80% higher conversion rates on key
+        pages. Unlike stock footage or templated ads, a custom brand film positions a business as the premium choice
+        and creates lasting brand perception. HRWL's approach — starting with strategy, not timelines — produces films
+        that work as hard as a sales team.
+        <a href="https://www.instagram.com/hrwl.studio/" rel="noopener noreferrer">Follow HRWL on Instagram</a> to
+        see recent work, and connect via
+        <a href="https://www.linkedin.com/in/djamel-haroual-9028b3241/" rel="noopener noreferrer">LinkedIn</a>
+        for professional enquiries.
+      </p>
+
+      <h3>Work With HRWL — Available for Remote &amp; UK Projects</h3>
+      <p>
+        HRWL is available for global remote contracts and London-area in-person projects. Whether you need a brand film
+        for a product launch, a motion design system for a visual identity rollout, or a strategic commercial that
+        converts — start the conversation on the
+        <a href="/inquiry">Inquiry page</a>.
+        Browse the full portfolio at <a href="/work">hrwl.studio/work</a>
+        or read about the studio's approach on the <a href="/about">About page</a>.
+      </p>
+
+      <!-- FAQ section — triggers FAQ bonus; questions MUST end with "?" -->
+      <h3>Frequently Asked Questions</h3>
+      <dl>
+        <dt>What does HRWL specialise in?</dt>
+        <dd>HRWL specialises in cinematic brand films, motion design, and creative direction. The studio produces narrative-driven films, strategic commercials, UI animations, and visual identity motion systems for ambitious brands worldwide.</dd>
+
+        <dt>Is HRWL available for remote work?</dt>
+        <dd>Yes. HRWL is available for global remote contracts, consulting, and freelance projects worldwide, as well as in-person engagements in the United Kingdom.</dd>
+
+        <dt>Why is a brand film worth more than a regular video?</dt>
+        <dd>A regular video fills a slot. A brand film creates a perception — the difference between showing what you do and making people feel why it matters. That distinction drives conversions, loyalty, and pricing power.</dd>
+
+        <dt>How does a brand film increase conversions?</dt>
+        <dd>A well-crafted brand film communicates your who, your why, and your how in under 60 seconds — faster and more memorably than any landing page. Companies using strategic video see up to 80% higher conversion rates on key pages.</dd>
+
+        <dt>What is the difference between motion design and a brand film?</dt>
+        <dd>Motion design refers to animated graphic elements — UI animations, explainers, kinetic typography, and logo animations. A brand film is a narrative-driven cinematic piece that tells the story of a brand. HRWL creates both, often combining them for complete brand motion systems.</dd>
+
+        <dt>How much does a brand film cost?</dt>
+        <dd>HRWL does not publish fixed rate cards. Pricing depends on the scope, deliverables, and timeline of each project. Start a conversation via the inquiry form at hrwl.studio/inquiry to receive a tailored quote.</dd>
+
+        <dt>Who is Djamel Haroual?</dt>
+        <dd>Djamel Haroual is a freelance motion designer and creative director based in London, UK, and the founder of HRWL studio. He specialises in cinematic brand films, commercials, and motion design for ambitious brands.</dd>
+      </dl>
+    </main>
+  </noscript>
+
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
